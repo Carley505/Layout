@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body{
+    width: 100%;
+    background-color: rgb(221, 220, 220);
+}
+
+.container{
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    line-height: 18px;
+}
+
+.title{
+    font-size: 26px;
+    margin-bottom: 2rem;
+}
+
+.sub-title{
+    color: rgb(27, 27, 27);
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 18px;
+}
+
+.header h1{
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+
+/* Nav */
+.nav{
+    background-color: black;
+    overflow: hidden;
+}
+
+.nav li a.right{
+    float: right;
+}
+
+.nav li a{
+    float: left;
+    display: block;
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.nav li a:hover{
+    background-color: rgb(221, 220, 220);
+    color: black;
+    text-decoration: underline;
+}
+
+/* Main Content */
+
+.main-content .container{
+    margin-bottom: 1.2rem;
+}
+
+.main-content .row .column{
+    float: left;
+    padding: 14px;
+}
+
+.row .column.main{
+    width: 70%;
+}
+
+.row .column.side{
+    width: 30%;
+}
+
+.main-content .container{
+    text-align: left;
+}
+
+.main-content .main .image{
+    background-color: rgb(158, 157, 157);
+    height: 250px;
+    padding: 1rem;
+}
+
+.main .txt{
+    margin-top: 1rem;
+}
+
+.main .txt p{
+    margin-bottom: 1rem;
+}
+
+.side .image{
+    background-color: rgb(158, 157, 157);
+    height: 150px;
+    padding: 1rem;
+}
+
+.side .txt{
+    margin-top: 1rem;
+}
+
+.popular .image{
+    height: 100px;
+}
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+
+.footer{
+    background-color: rgb(182, 181, 181);
+    padding: 40px;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 820px) {
+    .row .column.main, .row .column.side{
+        width: 100%;
+    }
+}
